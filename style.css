@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Concrete';
+    src: local('Concrete Regular'), local('Concrete-Regular'),
+        url('./fonts/Concrete-Regular.woff2') format('woff2'),
+        url('./fonts/Concrete-Regular.woff') format('woff'),
+        url('./fonts/Concrete-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: "Concrete", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 2vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 7em;
+    text-align: center;
+}
+
+.logo {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 10em;
+        height: 10em;
+    }
+}
